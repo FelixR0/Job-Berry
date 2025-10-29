@@ -37,7 +37,7 @@ export const JobItem = ({ title, description, src, url, name, date }) => {
                 <p className="card-text" style={{ width: "100%", display: "-webkit-box", WebkitLineClamp: 1, WebkitBoxOrient: "vertical" }}>{description ? description : "Unknown Location"}</p>
                 <p className="card-text" style={{ position: "absolute", bottom: "55px", left: "50%", transform: "translateX(-50%)", width: "calc(100% - 10px)", textAlign: "center", display: "-webkit-box", WebkitLineClamp: 1, WebkitBoxOrient: "vertical", textOverflow: "ellipsis", margin: 0 }}>{formattedDate ? formattedDate : "Posted: Unkown Date"}</p>
                 <div style={{ position: "absolute", bottom: "10px", left: "50%", transform: "translateX(-50%)", width: "calc(100% - 17px)" }}>
-                    <a href={url} className="btn btn-purple" style={{ display: "block", width: "100%", borderRadius: "15px", fontWeight: "500" }}>Apply Now</a>
+                    <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-purple" style={{ display: "block", width: "100%", borderRadius: "15px", fontWeight: "500" }}>Apply Now</a>
                 </div>
             </div>
         </div>
